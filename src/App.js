@@ -1,5 +1,11 @@
+import Banner from "./Banner";
+
 function App() {
-  return <div className="main">Hello World</div>;
+  return (
+    <div className="mainArea">
+      <Banner />
+    </div>
+  );
 }
 
 export default App;
