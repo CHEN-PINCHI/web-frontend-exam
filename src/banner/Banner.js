@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
 // ===== 圖片引入 =====
-import BannerBg from "./images/Banner-Background-01.png";
-import BannerCharWhite from "./images/Banner-Character-01-White.png";
-import BannerChar from "./images/Banner-Character-01.png";
-import LeftEye from "./images/Banner-LeftEye-Container.png";
-import RightEye from "./images/Banner-RightEye-Container.png";
-import LogoImg from "./images/Banner-Logo-01.png";
+import BannerBg from "../images/Banner-Background-01.png";
+import BannerCharWhite from "../images/Banner-Character-01-White.png";
+import BannerChar from "../images/Banner-Character-01.png";
+import LeftEye from "../images/Banner-LeftEye-Container.png";
+import RightEye from "../images/Banner-RightEye-Container.png";
+import LogoImg from "../images/Banner-Logo-01.png";
 
 export default function Banner() {
   // ==========================
