@@ -49,8 +49,8 @@ export default function Banner() {
     // --------------------------
     const handleOrientation = ({ beta, gamma }) => {
       if (beta === null || gamma === null) return;
-      target.x = gamma * -0.1;
-      target.y = beta * -0.1;
+      target.x = gamma * 0;
+      target.y = beta * 0;
     };
 
     // --------------------------
