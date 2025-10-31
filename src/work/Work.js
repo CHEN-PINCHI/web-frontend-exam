@@ -275,7 +275,7 @@ const Work = () => {
             </div>
           </div>
 
-          {/* 工作列表 */}
+          {/* 資料列表 */}
           {filteredJobs.length > 0 ? (
             <div className={`workList ${fadeState}`}>
               {currentJobs.map((job, index) => (
@@ -312,7 +312,7 @@ const Work = () => {
             <div className={`noData ${fadeState}`}>無資料</div>
           )}
 
-          {/* Modal */}
+          {/* 彈跳視窗 */}
           <div
             className={`modalArea ${modalJob ? 'current' : ''}`}
             onClick={() => setModalJob(null)}
@@ -375,7 +375,7 @@ const Work = () => {
             </div>
           </div>
 
-          {/* 分頁 */}
+          {/* 頁碼 */}
           {totalPages > 1 && (
             <div className={`pageBox ${pageFadeState}`}>
               <button
