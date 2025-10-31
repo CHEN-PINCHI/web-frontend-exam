@@ -95,10 +95,26 @@ $textColor: #4d4d4d
   margin-top: -160px
   padding: 0 40px 35px
 
+  @media ( max-width: 1440px )
+    margin-top: -100px
+    padding: 0 30px 25px
+
+  @media ( max-width: 1180px )
+    margin-top: 0
+    padding: 20px
+    padding-top: 0
+
+  @media ( max-width: 768px )
+    padding: 0
+    padding-bottom: 15px
+
   .wrap
     padding: 20px 30px 30px
     background: #fff
     border-radius: 10px
+
+    @media ( max-width: 480px )
+      padding: 15px
 
   .workBox
 
@@ -111,6 +127,16 @@ $textColor: #4d4d4d
       letter-spacing: 1.5px
       color: $textColor
 
+      @media ( max-width: 1440px )
+        padding: 10px 0
+        padding-left: 15px
+        font-size: 24px
+
+      @media ( max-width: 480px )
+        padding: 5px 0
+        padding-left: 10px
+        font-size: 20px
+
       &::before
         content: ''
         position: absolute
@@ -122,8 +148,16 @@ $textColor: #4d4d4d
         border-radius: 6px
         background: $mainColor
 
+        @media ( max-width: 1440px )
+          width: 4px
+          height: 16px
+          border-radius: 4px
+
   .filterBox
     margin-top: 15px
+
+    @media ( max-width: 1180px )
+      display: none
 
     .filterList
       display: flex
@@ -156,8 +190,11 @@ $textColor: #4d4d4d
         flex: none
         width: 140px
 
+        @media ( max-width: 1440px )
+          width: 100px
+
         button
-          padding: 20px
+          padding: 10px
           width: 100%
           height: 100%
           border: none
@@ -169,6 +206,9 @@ $textColor: #4d4d4d
           cursor: pointer
           transition: all 0.4s ease-in-out
 
+          @media ( max-width: 1440px )
+            font-size: 16px
+
           &:hover
             background: $mainColor
 
@@ -177,6 +217,9 @@ $textColor: #4d4d4d
 
       &.search, input[type="text"], select
         height: 75px
+
+        @media ( max-width: 1440px )
+          height: 56px
 
       label
         position: absolute
@@ -188,6 +231,9 @@ $textColor: #4d4d4d
         background: #fff
         color: $textColor
 
+        @media ( max-width: 1440px )
+          font-size: 12px
+
       input[type="text"], select
         padding: 0 15px
         padding-right: 45px
@@ -198,6 +244,9 @@ $textColor: #4d4d4d
         letter-spacing: 1px
         transition: all 0.4s ease-in-out
         color: $textColor
+
+        @media ( max-width: 1440px )
+          font-size: 16px
 
         &:hover
           border-color: #000
@@ -220,9 +269,31 @@ $textColor: #4d4d4d
     flex-wrap: wrap
     min-height: 650px
 
+    @media ( max-width: 1440px )
+      margin: 10px -10px 0
+      min-height: 572px
+
+    @media ( max-width: 768px )
+      min-height: auto
+
+    @media ( max-width: 480px )
+      margin: 5px -8px 0
+
     .workItem
-      width: calc( 100% / 3 )
       padding: 15px
+      width: calc( 100% / 3 )
+
+      @media ( max-width: 1440px )
+        padding: 10px
+
+      @media ( max-width: 1180px )
+        width: 50%
+
+      @media ( max-width: 768px )
+        width: 100%
+
+      @media ( max-width: 480px )
+        padding: 8px
 
       .item
         padding: 25px 20px 0
@@ -231,6 +302,10 @@ $textColor: #4d4d4d
         color: $textColor
         transition: all 0.4s ease-in-out
 
+        @media ( max-width: 480px )
+          padding: 15px
+          padding-bottom: 0
+
         &:hover
           box-shadow: 0 0 8px rgb(#000, 0.35)
 
@@ -238,6 +313,13 @@ $textColor: #4d4d4d
           font-size: 34px
           font-weight: 700
           letter-spacing: -2.5px
+
+          @media ( max-width: 1440px )
+            font-size: 24px
+            letter-spacing: 0
+
+          @media ( max-width: 480px )
+            font-size: 16px
 
         .infoList
           margin-top: 10px
@@ -256,8 +338,15 @@ $textColor: #4d4d4d
               height: auto
               aspect-ratio: 1 / 1
 
+              @media ( max-width: 1440px )
+                width: 18px
+
             .info
               padding-left: 10px
+
+              @media ( max-width: 1440px )
+                padding-left: 5px
+                font-size: 14px
 
         .preview
           margin-top: 8px
@@ -269,6 +358,11 @@ $textColor: #4d4d4d
           -webkit-box-orient: vertical
           overflow: hidden
           text-overflow: ellipsis
+
+          @media ( max-width: 1440px )
+            height: 42px
+            font-size: 14px
+            letter-spacing: 1px
 
         .description
           padding: 10px 0 20px
@@ -283,6 +377,10 @@ $textColor: #4d4d4d
           text-align: center
           cursor: pointer
           transition: all 0.4s ease-in-out
+
+          @media ( max-width: 1440px )
+            padding: 10px 0 15px
+            font-size: 14px
 
           &:hover
             color: $secondColor
@@ -338,21 +436,36 @@ $textColor: #4d4d4d
       transform: translateY(50px)
       overflow: hidden
 
+      @media ( max-width: 1440px )
+        max-width: 768px
+
     .modalContent
       height: 100%
 
     .detailsInfo
-      padding: 25px 30px
+      padding: 20px 30px
+      display: flex
+      align-items: center
+      height: 80px
       font-size: 30px
       font-weight: 700
       letter-spacing: 1px
       color: $textColor
       border-bottom: 1px solid #ccc
 
+      @media ( max-width: 1440px )
+        padding: 20px
+        height: 62px
+        font-size: 24px
+
     .modalBox
       padding: 30px
       height: calc( 100% - 80px - 70px)
       overflow-y: auto
+
+      @media ( max-width: 1440px )
+        padding: 20px
+        height: calc( 100% - 62px - 52px)
 
       &::-webkit-scrollbar-track
         -webkit-box-shadow: inset 0 0 3px rgba(#000, 0.15)
@@ -371,6 +484,7 @@ $textColor: #4d4d4d
         display: flex
         flex-wrap: wrap
         align-items: flex-end
+        line-height: 1.3
         letter-spacing: 2px
         color: $textColor
 
@@ -379,15 +493,24 @@ $textColor: #4d4d4d
           font-size: 30px
           font-weight: 700
 
+          @media ( max-width: 1440px )
+            font-size: 24px
+
         .modalSubTitle
           font-size: 28px
           letter-spacing: -1px
+
+          @media ( max-width: 1440px )
+            font-size: 20px
 
       .photoBox
         overflow: hidden
 
         .photoList
           margin: 30px -10% 10px -5px
+
+          @media ( max-width: 640px )
+            margin: 20px -20% 10px -5px
 
           .photoItem
             padding: 0 5px
@@ -442,6 +565,9 @@ $textColor: #4d4d4d
           letter-spacing: 2px
           color: #333
 
+          @media ( max-width: 1440px )
+            font-size: 20px
+
         .description
           padding-left: 10px
           margin-top: 15px
@@ -449,6 +575,9 @@ $textColor: #4d4d4d
           line-height: 1.5
           letter-spacing: 1px
           color: #808080
+
+          @media ( max-width: 1440px )
+            font-size: 16px
 
     .closeBtn
       padding: 10px 20px
@@ -465,6 +594,10 @@ $textColor: #4d4d4d
       letter-spacing: 1px
       color: $textColor
 
+      @media ( max-width: 1440px )
+        height: 52px
+        font-size: 16px
+
   .pageBox
     display: flex
     justify-content: center
@@ -477,7 +610,8 @@ $textColor: #4d4d4d
       align-items: center
       justify-content: center
       width: 43px
-      height: 43px
+      height: auto
+      aspect-ratio: 1 / 1
       background: transparent
       border: none
       border-radius: 100%
@@ -485,6 +619,10 @@ $textColor: #4d4d4d
       font-size: 18px
       color: $textColor
       transition: all 0.4s ease-in-out
+
+      @media ( max-width: 1440px )
+        width: 32px
+        font-size: 14px
 
       &:hover:not(:disabled)
         background: #ddd
@@ -501,19 +639,23 @@ $textColor: #4d4d4d
           top: 50%
           left: 50%
           width: 10px
-          height: 10px
+          height: auto
+          aspect-ratio: 1 / 1
           border-top: 1px solid $textColor
           border-right: 1px solid $textColor
+
+          @media ( max-width: 1440px )
+            width: 8px
 
         &Prev
 
           &::before
-            transform: translate(-50%, -50%) rotate(-135deg)
+            transform: translate(-40%, -50%) rotate(-135deg)
 
         &Next
 
           &::before
-            transform: translate(-50%, -50%) rotate(45deg)
+            transform: translate(-60%, -50%) rotate(45deg)
 
       &:disabled
         opacity: 0.4
