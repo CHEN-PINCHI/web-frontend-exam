@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-frontend-exam/static/css/main.550fb2ed.css",
-    "main.js": "/web-frontend-exam/static/js/main.4e71df32.js",
+    "main.js": "/web-frontend-exam/static/js/main.41d53023.js",
     "static/media/Banner-Character-01.png": "/web-frontend-exam/static/media/Banner-Character-01.bab832527825ba93f519.png",
     "static/media/Banner-Background-01.png": "/web-frontend-exam/static/media/Banner-Background-01.60b0bb7028c5b05f470e.png",
     "static/media/Banner-Logo-01.png": "/web-frontend-exam/static/media/Banner-Logo-01.202cfb06e6d2b3abfa59.png",
@@ -12,10 +12,10 @@
     "static/media/slick.woff": "/web-frontend-exam/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/web-frontend-exam/index.html",
     "main.550fb2ed.css.map": "/web-frontend-exam/static/css/main.550fb2ed.css.map",
-    "main.4e71df32.js.map": "/web-frontend-exam/static/js/main.4e71df32.js.map"
+    "main.41d53023.js.map": "/web-frontend-exam/static/js/main.41d53023.js.map"
   },
   "entrypoints": [
     "static/css/main.550fb2ed.css",
-    "static/js/main.4e71df32.js"
+    "static/js/main.41d53023.js"
   ]
 }
