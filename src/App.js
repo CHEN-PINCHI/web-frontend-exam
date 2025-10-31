@@ -1,9 +1,9 @@
-import Banner from "./banner/Banner";
-import Work from "./work/Work";
+import Banner from './banner/Banner';
+import Work from './work/Work';
 
 function App() {
   return (
-    <div className="mainArea">
+    <div className='mainArea'>
       <Banner />
       <Work />
     </div>
